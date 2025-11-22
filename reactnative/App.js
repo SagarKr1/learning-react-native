@@ -4,6 +4,8 @@ import UserData from './components/UserData'
 import PropsPass from './components/PropsPass';
 import InputBox from './components/InputBox';
 import Form from './components/Form';
+import List from './components/List';
+import Grid from './components/Grid';
 import React from 'react';
 
 export default function App() {
@@ -21,7 +23,9 @@ export default function App() {
   }
   return (
     <View style={styles.container}>
-      <Form/>
+      <Grid/>
+      {/* <List/> */}
+      {/* <Form/> */}
       {/* <InputBox/> */}
       {/* <UserData/> */}
       {/* <PropsPass name={data.name} email={data.email} />
