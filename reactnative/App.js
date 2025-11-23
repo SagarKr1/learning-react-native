@@ -6,6 +6,8 @@ import InputBox from './components/InputBox';
 import Form from './components/Form';
 import List from './components/List';
 import Grid from './components/Grid';
+import FlatList1 from './components/FlatList1';
+import SectionList0 from './components/SectionList0';
 import React from 'react';
 
 export default function App() {
@@ -23,7 +25,9 @@ export default function App() {
   }
   return (
     <View style={styles.container}>
-      <Grid/>
+      <SectionList0/>
+      {/* <FlatList1/> */}
+      {/* <Grid/> */}
       {/* <List/> */}
       {/* <Form/> */}
       {/* <InputBox/> */}
