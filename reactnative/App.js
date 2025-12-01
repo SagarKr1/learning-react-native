@@ -8,6 +8,13 @@ import List from './components/List';
 import Grid from './components/Grid';
 import FlatList1 from './components/FlatList1';
 import SectionList0 from './components/SectionList0';
+import UseEffectHook from './components/UseEffectHook';
+import Toggle from './components/Toggle';
+import ResponsiveLayout from './components/ResponsiveLayout';
+import Buttons from './components/Buttons';
+// import Loader from './components/Loader';
+// import DialogBox from './components/DialogBox';
+import PressableButton from './components/PressableButton';
 import React from 'react';
 
 export default function App() {
@@ -25,7 +32,14 @@ export default function App() {
   }
   return (
     <View style={styles.container}>
-      <SectionList0/>
+      <PressableButton/>
+      {/* <DialogBox/> */}
+      {/* <Loader/> */}
+      {/* <Buttons/> */}
+      {/* <ResponsiveLayout/> */}
+      {/* <Toggle/> */}
+      {/* <UseEffectHook/> */}
+      {/* <SectionList0/> */}
       {/* <FlatList1/> */}
       {/* <Grid/> */}
       {/* <List/> */}
@@ -42,8 +56,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     marginTop: 30,
-    marginLeft:10,
-    marginRight:10,
+    // marginLeft:10,
+    // marginRight:10,
     flex: 1,
     backgroundColor: '#fff',
     // alignItems: 'center',
