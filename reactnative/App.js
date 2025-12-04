@@ -16,40 +16,50 @@ import Buttons from './components/Buttons';
 // import DialogBox from './components/DialogBox';
 import PressableButton from './components/PressableButton';
 import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 export default function App() {
-  const [data, setData] = React.useState({
-    name: "Sagar Kumar",
-    email: "sagar@gmail.com"
-  });
+  const Stack = createNativeStackNavigator();
 
-  const updateData = () => {
-    setData({
-      name: "Satish Kumar",
-      email: "satish@gmail.com"
-    });
-    alert("Data updated");
-  }
+  // const [data, setData] = React.useState({
+  //   name: "Sagar Kumar",
+  //   email: "sagar@gmail.com"
+  // });
+
+  // const updateData = () => {
+  //   setData({
+  //     name: "Satish Kumar",
+  //     email: "satish@gmail.com"
+  //   });
+  //   alert("Data updated");
+  // }
   return (
-    <View style={styles.container}>
-      <PressableButton/>
-      {/* <DialogBox/> */}
-      {/* <Loader/> */}
-      {/* <Buttons/> */}
-      {/* <ResponsiveLayout/> */}
-      {/* <Toggle/> */}
-      {/* <UseEffectHook/> */}
-      {/* <SectionList0/> */}
-      {/* <FlatList1/> */}
-      {/* <Grid/> */}
-      {/* <List/> */}
-      {/* <Form/> */}
-      {/* <InputBox/> */}
-      {/* <UserData/> */}
-      {/* <PropsPass name={data.name} email={data.email} />
-      <Button title='Update Info' onPress={updateData} /> */}
-      {/* <StatusBar style="auto" /> */}
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name='Home' component={PressableButton}/>
+        <Stack.Screen name='Home 1' component={PressableButton}/>
+      </Stack.Navigator>
+    </NavigationContainer>
+    // <View style={styles.container}>
+    //   {/* <PressableButton/> */}
+    //   {/* <DialogBox/> */}
+    //   {/* <Loader/> */}
+    //   {/* <Buttons/> */}
+    //   {/* <ResponsiveLayout/> */}
+    //   {/* <Toggle/> */}
+    //   {/* <UseEffectHook/> */}
+    //   {/* <SectionList0/> */}
+    //   {/* <FlatList1/> */}
+    //   {/* <Grid/> */}
+    //   {/* <List/> */}
+    //   {/* <Form/> */}
+    //   {/* <InputBox/> */}
+    //   {/* <UserData/> */}
+    //   {/* <PropsPass name={data.name} email={data.email} />
+    //   <Button title='Update Info' onPress={updateData} /> */}
+    //   {/* <StatusBar style="auto" /> */}
+    // </View>
   );
 }
 
